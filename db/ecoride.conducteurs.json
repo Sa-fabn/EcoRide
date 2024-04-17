@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "661ef0d463996f102e0a1e1e"
+  },
+  "nom": "nomConducteur",
+  "prenom": "prenomConducteur",
+  "email": "conducteur@example.com",
+  "mdp": "motdepasse",
+  "vehicule": {
+    "marque": "marqueVehicule"
+  },
+  "historique_trajets": [],
+  "historique_recompenses": [],
+  "solde_points": 1000
+}]

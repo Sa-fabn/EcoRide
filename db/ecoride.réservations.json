@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "661ef2aa63996f102e0a1e2e"
+  },
+  "id_passager": {
+    "$oid": "661ef12263996f102e0a1e20"
+  },
+  "id_conducteur": {
+    "$oid": "661ef0d463996f102e0a1e1e"
+  },
+  "id_trajet": {
+    "$oid": "661ef36663996f102e0a1e35"
+  },
+  "lieu_depart": "lieuDépart",
+  "lieu_arrivee": "lieuArrivée",
+  "heure_depart": "2024-05-01T08:00:00Z",
+  "heure_arrivee": "2024-05-01T10:00:00Z",
+  "prix_trajet": 50,
+  "mode_de_paiement": "Carte bancaire",
+  "nombre_passagers": 4
+}]

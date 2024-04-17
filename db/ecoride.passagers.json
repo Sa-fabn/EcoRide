@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "661ef12263996f102e0a1e20"
+  },
+  "nom": "nomPassager",
+  "prenom": "prenomPassager",
+  "email": "passager@example.com",
+  "mdp": "motdepasse",
+  "historique_trajets": [],
+  "historique_recompenses": [],
+  "solde_points": 1000
+}]
