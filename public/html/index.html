@@ -6,7 +6,7 @@
     <title>EcoRide</title>
     <style>
         header {
-            background-color: #1e90ff;
+            background-color: #073912;
             padding: 20px 0;
             text-align: center;
         }
@@ -25,6 +25,9 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
         }
 
         body {
@@ -45,11 +48,27 @@
         .container h1 {
             font-size: 36px;
             margin-bottom: 20px;
-            color: #fff;
+            color: #000000;
+        }
+
+        .description {
+            margin-bottom: 20px; /* Espacement entre le titre et la description */
+            font-size: 18px; /* Taille du texte de la description */
+            line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+        }
+
+        .logo-container {
+            margin-top: 20px; /* Espacement entre la description et le logo */
+        }
+
+        .logo {
+            max-width: 200px; /* Ajustez la largeur du logo selon vos besoins */
+            height: auto; /* Pour conserver les proportions */
+            margin: 0 auto; /* Centrage horizontal */
         }
 
         footer {
-            background-color: #1e90ff;
+            background-color: #073912;
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -63,17 +82,20 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Accueil</a></li>
                 <li><a href="/login.html">Connexion</a></li>
-                <li><a href="/profile.html">Profile</a></li>
-                <li><a href="/reservation.html">Reservation</a></li>
-                <li><a href="/ride.html">Ride</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <h1>Bienvenue sur notre plateforme de covoiturage écologique !</h1>
+        <h1>Bienvenue sur notre plateforme de covoiturage écologique EcoRide !</h1>
+        <p class="description">Sur EcoRide, nous nous engageons à rendre le covoiturage simple et convivial.<br>
+            Notre plateforme vous offre une solution intuitive pour rechercher et réserver des trajets en voiture.</p>
+    
+        <div class="logo-container">
+            <img class="logo" src="../logo.png" alt="EcoRide Logo">
+        </div>
+
     </div>
 
     <footer>

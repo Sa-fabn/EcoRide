@@ -32,13 +32,12 @@ async function startServer() {
         app.listen(PORT, () => {
             console.log(`Serveur démarré sur le port ${PORT}`);
         });
+
+        // Exporter la base de données après l'avoir créée
+        module.exports.db = db;
     } catch (error) {
         console.error('Erreur lors du démarrage du serveur :', error);
     }
 }
 
 startServer();
-
-
-
-

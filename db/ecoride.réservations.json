@@ -11,11 +11,11 @@
   "id_trajet": {
     "$oid": "661ef36663996f102e0a1e35"
   },
-  "lieu_depart": "lieuDépart",
-  "lieu_arrivee": "lieuArrivée",
-  "heure_depart": "2024-05-01T08:00:00Z",
-  "heure_arrivee": "2024-05-01T10:00:00Z",
-  "prix_trajet": 50,
+  "lieuDepart": "lieuDépart",
+  "lieuArrivee": "lieuArrivée",
+  "heureDepart": "2024-05-01T08:00:00Z",
+  "heureArrivee": "2024-05-01T10:00:00Z",
+  "prixTrajet": 50,
   "mode_de_paiement": "Carte bancaire",
-  "nombre_passagers": 4
+  "nombrePassagers": 4
 }]

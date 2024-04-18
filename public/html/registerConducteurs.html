@@ -6,34 +6,24 @@
     <title>Inscription Conducteur</title>
     <style>
         body {
-            background-color: #36054a; /* couleur de fond */
+            background-color: #ffffff; /* couleur de fond */
             font-family: Arial, sans-serif; /* police de caractères */
             text-align: center; /* centrage du contenu */
-            padding-top: 50px; /* espace au-dessus du titre */
-            color: #ffffff; /* couleur du texte */
+            padding-bottom: 70px; /* espace au-dessous du footer */
         }
-        
-        h1 {
-            color: #ffffff; /* couleur du texte */
-        }
-        
         form {
-            background-color: #ffffff; /* couleur de fond du formulaire */
+            background-color: #edee9e; /* couleur de fond du formulaire */
             padding: 20px; /* espacement intérieur */
             border-radius: 10px; /* coins arrondis */
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* ombre légère */
             width: 300px; /* largeur du formulaire */
             margin: 0 auto; /* centrage horizontal */
-            color: #333; /* couleur du texte */
         }
-        
         label {
             display: block; /* afficher sur une nouvelle ligne */
             margin-bottom: 10px; /* espacement sous chaque label */
             font-weight: bold; /* texte en gras */
-            color: #333; /* couleur du texte */
         }
-        
         input {
             width: 100%; /* largeur du champ de saisie */
             padding: 10px; /* espacement intérieur */
@@ -42,9 +32,8 @@
             border-radius: 5px; /* coins arrondis */
             box-sizing: border-box; /* inclure la bordure dans la taille */
         }
-        
         button {
-            background-color: #007bff; /* couleur de fond du bouton */
+            background-color: #348d16; /* couleur de fond du bouton */
             color: #ffffff; /* couleur du texte */
             border: none; /* pas de bordure */
             padding: 10px 20px; /* espacement intérieur */
@@ -52,37 +41,84 @@
             cursor: pointer; /* curseur pointeur */
             font-size: 16px; /* taille de la police */
         }
-        
         button:hover {
-            background-color: #0056b3; /* couleur de fond au survol */
+            background-color: #073912; /* couleur de fond au survol */
         }
         
-        a {
-            color: #007bff; /* couleur des liens */
-            text-decoration: none; /* pas de soulignement */
+        footer {
+            background-color: #073912;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-        
-        a:hover {
-            text-decoration: underline; /* soulignement au survol */
+        header {
+            background-color: #073912;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1; /* Pour placer le header au-dessus des autres éléments */
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline; /* effet de soulignement au survol */
+        }
+        .main-content {
+            padding-top: 70px; /* Ajout d'un espace pour le header */
         }
     </style>
 </head>
 <body>
-    <h1>Inscription Conducteur</h1>
-    <form action="/inscriptionConducteur" method="POST">
-        <label for="nom">Nom:</label><br>
-        <input type="text" id="nom" name="nom" required><br>
-        <label for="prenom">Prénom:</label><br>
-        <input type="text" id="prenom" name="prenom" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="password">Mot de passe:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        <label for="vehicule">Véhicule:</label><br>
-        <input type="text" id="vehicule" name="vehicule" required><br>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/login.html">Connexion</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/reservation.html">Reservation</a></li>
+                <li><a href="/trajet.html">Trajet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <h1>Inscription Conducteur</h1>
+        <form action="/inscriptionConducteur" method="POST">
+            <label for="nom">Nom:</label><br>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="prenom">Prénom:</label><br>
+            <input type="text" id="prenom" name="prenom" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Mot de passe:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <label for="vehicule">Véhicule:</label><br>
+            <input type="text" id="vehicule" name="vehicule" required><br>
 
-        <button type="submit">S'inscrire</button>
-    </form>
-    <p><a href="/login.html">Page d'accueil</a></p>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EcoRide - Tous droits réservés</p>
+    </footer>
 </body>
 </html>
+
+

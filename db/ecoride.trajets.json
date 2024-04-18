@@ -6,10 +6,10 @@
     "$oid": "661ef0d463996f102e0a1e1e"
   },
   "details_trajet": {
-    "heure_depart": "2024-04-20T09:00:00",
-    "heure_arrivee": "2024-04-20T12:00:00",
-    "lieu_depart": "lieuDepart",
-    "lieu_arrivee": "lieuArrivee",
+    "heureDepart": "2024-04-20T09:00:00",
+    "heureArrivee": "2024-04-20T12:00:00",
+    "lieuDepart": "lieuDepart",
+    "lieuArrivee": "lieuArrivee",
     "nombre_places_disponibles": 4
   },
   "empreinte_carbone": "EmpreinteCarbone",

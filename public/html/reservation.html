@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            background-color: #073912;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .form-container {
+            max-width: 800px;
+            margin: 20px auto; /* Centrer le formulaire */
+            padding: 20px;
+            background-color: #edee9e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        
+        .form-group button {
+            background-color: #348d16;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        .form-group button:hover {
+            background-color: #073912;
+        }
+        
+        footer {
+            background-color: #073912;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/login.html">Connexion</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/trajet.html">Trajet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Réserver un trajet</h1>
+        <form id="reservationForm" action="/reservation" method="POST">
+            <div class="form-group">
+                <label for="depart">Lieu de départ :</label>
+                <input type="text" id="depart" name="depart" required>
+            </div>
+            <div class="form-group">
+                <label for="arrivee">Lieu d'arrivée :</label>
+                <input type="text" id="arrivee" name="arrivee" required>
+            </div>
+            <div class="form-group">
+                <label for="dateDepart">Date et heure de départ :</label>
+                <input type="datetime-local" id="dateDepart" name="dateDepart" required>
+            </div>
+            <div class="form-group">
+                <label for="dateArrivee">Date et heure d'arrivée :</label>
+                <input type="datetime-local" id="dateArrivee" name="dateArrivee" required>
+            </div>
+            <div class="form-group">
+                <label for="nombrePassagers">Nombre de passagers :</label>
+                <input type="number" id="nombrePassagers" name="nombrePassagers" min="1" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Réserver</button>
+            </div>
+        </form>
+        <div id="reservationInfo"></div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EcoRide - Tous droits réservés</p>
+    </footer>
+</body>
+
+</html>
+
